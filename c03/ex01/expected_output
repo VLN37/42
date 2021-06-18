@@ -1,0 +1,12 @@
+abcde
+abcde
+O retorno deve ser 0 e é: 0
+
+abcde
+abcdf
+O retorno deve ser >0 e é: 1
+
+A
+V
+O retorno deve ser <0 e é: -21
+

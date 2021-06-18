@@ -1,0 +1,3 @@
+after assignment X is 42, Y is 24
+after pointer assignment *A is 42, *B is 24
+after function A is 24, B is 42

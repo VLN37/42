@@ -1,0 +1,12 @@
+Hello World! 
+Hello World! 
+O retorno deve ser 0 e é: 0
+
+abc
+cde
+O retorno deve ser >1 e é: 2
+
+cde
+abc
+O retorno deve ser <-1 e é: -2
+
