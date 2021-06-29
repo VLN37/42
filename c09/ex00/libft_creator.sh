@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c ft* && ar rc libft.a *.o
+gcc -Wall -Wextra - Werror -c ft* && ar rc libft.a *.o
