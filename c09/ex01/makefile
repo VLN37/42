@@ -20,7 +20,7 @@ INDEX	= ranlib ${NAME}
 			${CC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${INCLUDE}
 
 all:		${OBJECTS}
-			${AR} ${ARFLAGS} ${NAME} ${OBJECTS}
+			${AR} ${ARFLAGS} ${OBJECTS} ${NAME}
 			${INDEX}
 
 clean:

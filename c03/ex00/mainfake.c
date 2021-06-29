@@ -24,10 +24,10 @@ int	main(void)
 	char *s4;
 	char s5[] = {'a', 'b', 'c', -10, -20, '\0'};
 
-	s1 = calloc(10, sizeof(char)); 
-	s2 = calloc(8, sizeof(char)); 
-	s3 = calloc(10, sizeof(char)); 
-	s4 = calloc(10, sizeof(char)); 
+	s1 = calloc(10, sizeof(char));
+	s2 = calloc(8, sizeof(char));
+	s3 = calloc(10, sizeof(char));
+	s4 = calloc(10, sizeof(char));
 	s1 = "abcdefghi";
 	s2 = "abcdefg";
 	s3 = "abcdEfghi";

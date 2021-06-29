@@ -11,7 +11,7 @@ int	*ft_range(int min, int max)
 	range = 0;
 	if (min >= max)
 		return (range);
-	range = malloc(sizeof(min) * (max - min));
+	range = (char *) malloc(sizeof(min) * (max - min));
 	while (min < max)
 	{
 		range[i] = min;
