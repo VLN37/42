@@ -17,39 +17,13 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-// int	arraysize(int argc, char **argv)
-// {
-// 	int		i;
-// 	int		size;
-// 	int		fd;
-// 	char	buffer;
-
-// 	i = 1;
-// 	size = 0;
-// 	while (i < argc)
-// 	{
-// 		fd = open(argv[i], O_RDONLY);
-// 		if (fd == -1 && argv[i][0] != '-')
-// 		{
-// 			write(2, strerror(errno), ft_strlen(strerror(errno)));
-//			write(1, "\n", 1);
-// 			return (1);
-// 		}
-// 		while (read(fd, &buffer, 1))
-// 			size++;
-// 		close(fd);
-// 		i++;
-// 	}
-// 	return (size);
-// }
-
 int	main(int argc, char **argv)
 {
 	int		fd;
 	char	buffer;
 	int		i;
 	int		j;
-	char	output[3000];
+	char	output[29000];
 
 	i = 1;
 	if (argc == 1 || (argc == 2 && argv[1][0] == '-'))
@@ -80,6 +54,32 @@ int	main(int argc, char **argv)
 	write(1, '\0', 1);
 	return (0);
 }
+
+// int	arraysize(int argc, char **argv)
+// {
+// 	int		i;
+// 	int		size;
+// 	int		fd;
+// 	char	buffer;
+
+// 	i = 1;
+// 	size = 0;
+// 	while (i < argc)
+// 	{
+// 		fd = open(argv[i], O_RDONLY);
+// 		if (fd == -1 && argv[i][0] != '-')
+// 		{
+// 			write(2, strerror(errno), ft_strlen(strerror(errno)));
+//			write(1, "\n", 1);
+// 			return (1);
+// 		}
+// 		while (read(fd, &buffer, 1))
+// 			size++;
+// 		close(fd);
+// 		i++;
+// 	}
+// 	return (size);
+// }
 
 //	int		size;
 	// size = arraysize(argc, argv);

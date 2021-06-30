@@ -1,4 +1,4 @@
-SOURCES		= ft_cat.c
+SOURCES		= main.c
 
 OBJECTS		= ${SOURCES:.c=.o}
 

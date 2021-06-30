@@ -33,7 +33,7 @@ int	main(int argc, char **argv)
 	descriptor =  open(argv[1], O_RDONLY);
 	if (descriptor == -1)
 	{
-		write(1, strerror(errno), ft_strlen(strerror(errno)));
+		write(2, strerror(errno), ft_strlen(strerror(errno)));
 		return (1);
 	}
 	while (read(descriptor, &buffer, 1))
