@@ -24,9 +24,9 @@ int	ft_getbytecount(char *argv)
 
 	i = 0;
 	res = 0;
-	while(argv[i])
+	while (argv[i])
 	{
-		if(argv[i] >= '0' && argv[i] <= '9')
+		if (argv[i] >= '0' && argv[i] <= '9')
 			res = (res * 10) + (argv[i] - '0');
 		i++;
 	}
@@ -38,21 +38,38 @@ int	ft_checkerrno(int fd)
 	if (fd == -1)
 	{
 		write(1, strerror(errno), ft_strlen(strerror(errno)));
-		write(1, "\n", 1);
 		return (1);
 	}
 	return (0);
 }
 
-int	main(int argc, char **argv)
+int	logic(int bytes, char *argv)
 {
-	int		fd;
-	char	buffer;
-	int		bytes;
 	int		i;
-	int		j;
+	char	buffer;
+	int		fd;
 
 	i = 0;
+	fd = open(argv, O_RDONLY);
+	ft_checkerrno(fd);
+	while (read(fd, &buffer, 1))
+		i++;
+	close(fd);
+	fd = open(argv, O_RDONLY);
+	ft_checkerrno(fd);
+	while (i-- > bytes)
+		read(fd, &buffer, 1);
+	while (read(fd, &buffer, 1))
+		write(1, &buffer, 1);
+}
+
+int	main(int argc, char **argv)
+{
+	int		bytes;
+	int		j;
+	char	buffer;
+
+	j = 2;
 	if (argc == 1 || (argc == 2 && argv[1][0] == '-' && argv[1][1] != 'c'))
 	{
 		while (read(0, &buffer, 1) > 0)
@@ -60,24 +77,19 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 	bytes = ft_getbytecount(argv[1]);
-	printf("%d\n", bytes);
-	fd = open(argv[1], O_RDONLY);
-	if (ft_checkerrno(fd));
-		return(1);
-	while (read(fd, &buffer, 1))
-		i++;
-	close(fd);
-	printf("%d\n\n", i);
-	fd = open(argv[1], O_RDONLY);
-	if (ft_checkerrno(fd));
-		return(1);
-	while(i > bytes)
+	while (j < argc)
 	{
-		printf("%d\n", i);
-		read(fd, &buffer, 1);
-		i--;
+		if (argc > 3)
+		{
+			write(1, "==> ", 4);
+			write(1, argv[j], strlen(argv[j]));
+			write(1, " <==\n", 5);
+			if (logic(bytes, argv[j]))
+				return (1);
+		}
+		else
+			if (logic(bytes, argv[j]))
+				return (1);
+		j++;
 	}
-	while(read(fd, &buffer, 1))
-		write(1, &buffer, 1);
-	return(0);
 }
