@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//reverse the order of a string of ints passed as parameter
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	counter;

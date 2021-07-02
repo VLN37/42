@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prints numbers 1 through 9
 #include <unistd.h>
 
+//function prints numbers 1 through 9
 void	ft_print_numbers(void)
 {
 	char	c;

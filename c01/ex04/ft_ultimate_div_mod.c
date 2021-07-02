@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//stores the division and module of two ints in their own addresses
 void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int	tempdiv;

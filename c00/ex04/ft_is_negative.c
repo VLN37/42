@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prints whether the input number is positive or negative
 #include <unistd.h>
 
+//function prints whether the input number is positive or negative
 void	ft_is_negative(int n)
 {
 	if (n >= 0)

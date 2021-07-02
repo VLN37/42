@@ -12,6 +12,7 @@
 
 #include<unistd.h>
 
+//prints a string passed as parameter
 void	ft_putstr(char *str)
 {
 	int	counter;

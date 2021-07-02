@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prints sequences of three unique numbers from 000 through 999
 #include <unistd.h>
 
+//function prints sequences of three unique numbers from 000 through 999
 void	print(char c, char d, char u)
 {
 	write(1, &c, 1);

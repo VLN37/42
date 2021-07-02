@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//swaps the value inside the addresses of two pointers
 void	ft_swap(int *a, int *b)
 {
 	int	temp;

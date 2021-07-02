@@ -10,9 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prints the entire alphabet
+
 #include<unistd.h>
 
+//prints the entire alphabet
 void	ft_print_alphabet (void)
 {
 	char	c;

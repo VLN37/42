@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prints the character input
 #include<unistd.h>
 
+//prints the character received as parameter
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);

@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prints the alphabet in reverse
 #include <unistd.h>
 
+//function prints the alphabet in reverse
 void	ft_print_reverse_alphabet(void)
 {
 	char	c;

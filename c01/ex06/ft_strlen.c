@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//returns the size of a string
 int	ft_strlen(char *str)
 {
 	int	counter;
