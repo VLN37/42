@@ -8,8 +8,8 @@
 
 int	ft_strlen(char *str)
 {
-	char	i;
-	while (str[i])
+	int	i;
+	while (str[i] != '\0')
 		i++;
 	return (i);
 }
@@ -18,7 +18,6 @@ int	main(int argc, char **argv)
 {
 	int		descriptor;
 	char	buffer;
-	char	*errmsg;
 
 	if (argc == 1)
 	{

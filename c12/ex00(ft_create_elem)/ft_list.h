@@ -3,7 +3,7 @@
 
 typedef	struct	s_list
 {
-	void	*stuff;
+	char	*data;
 	struct	s_list	*next;
 }	t_list;
 

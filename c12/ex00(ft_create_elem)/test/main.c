@@ -8,12 +8,12 @@ void	aff_list(t_list *begin)
 {
 	while (begin)
 	{
-		printf("%d\n", begin->i);
+		printf("%d\n", begin->nbr);
 		begin = begin->next;
 	}
 }
 
-int	main(void);
+int	main(void)
 {
 	t_list	elem1;
 	t_list	elem2;
@@ -28,5 +28,6 @@ int	main(void);
 	elem1.nbr = 21;
 	elem2.nbr = 42;
 	elem3.nbr = 84;
-	elem4 = ft_create_elem(data);
+	aff_list(begin);
+	return (0);
 }
