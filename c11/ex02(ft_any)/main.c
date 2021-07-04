@@ -23,6 +23,9 @@ int	main(void)
 	// 						};
 	//correct declaration that goes inside the function
 	char *array[] = { "hello", "guys", "how r u"};
+	char *array2[] = { "", "", ""};
+	printf("Return should be 1 and is: %d\n", ft_any(array, ptr));
+	printf("Return should be 0 and is: %d\n", ft_any(array2, ptr));
 	if (ft_any(array, ptr))
 		return(1);
 	return (0);

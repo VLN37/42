@@ -16,11 +16,21 @@ int	main(void)
 	int	*newptr;
 	int	i;
 
-	i = -1;
+	i = 0;
 	ptr = &multiply;
 	newptr = ft_map(array, 5, ptr);
-	while(i++ < 4)
+	while (i < 5)
+	{
+		printf("pos %d = %d ", i, array[i]);
+		i++;
+	}
+	printf("\n");
+	i = 0;
+	while(i < 5)
+	{
 		printf("pos %d = %d ", i, newptr[i]);
+		i++;
+	}
 	printf("\n");
 	free(newptr);
 	newptr = 0;

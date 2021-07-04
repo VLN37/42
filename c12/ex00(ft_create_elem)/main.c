@@ -1,5 +1,6 @@
 #include "ft_list.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 t_list *ft_create_elem(void *data);
 
@@ -26,10 +27,12 @@ int	main(void)
 	elem2.next = &elem3;
 	elem3.next = 0;
 
-	elem1.data = "hello";
-	elem2.data = "buddy";
-	elem3.data = "how r u";
-	begin = ft_create_elem("doing?");
+	elem1.data = "buddy";
+	elem2.data = "how r u";
+	elem3.data = "doing?";
+	begin = ft_create_elem("hello");
+	begin->next = &elem1;
 	aff_list(begin);
+	free(begin);
 	return (0);
 }

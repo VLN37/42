@@ -1,10 +1,10 @@
-SOURCES		= main.c
+SOURCES		= ft_cat.c
 
 OBJECTS		= ${SOURCES:.c=.o}
 
 NAME		= ft_cat
 
-CC			= cc
+CC			= gcc
 RM			= rm -f
 
 CFLAGS		= -Wall -Wextra -Werror

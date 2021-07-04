@@ -11,9 +11,7 @@ int *ft_map(int *tab, int length, int(*f)(int))
 	while (i < length)
 	{
 		returnedarray[i] = (*f)(tab[i]);
-		printf("pos %d = %d ", i, returnedarray[i]);
 		i++;
 	}
-	printf("\n");
 	return (returnedarray);
 }
