@@ -21,7 +21,6 @@ INDEX	= ranlib ${NAME}
 
 all:		${OBJECTS}
 			${AR} ${ARFLAGS} ${NAME} ${OBJECTS}
-			${INDEX}
 
 clean:
 			${RM} ${OBJECTS}

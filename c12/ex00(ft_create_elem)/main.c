@@ -5,7 +5,7 @@
 t_list *ft_create_elem(void *data);
 
 //runs through the linked list, printing the relevant parameters
-void	aff_list(t_list *begin)
+void	print_list(t_list *begin)
 {
 	while (begin)
 	{
@@ -32,7 +32,7 @@ int	main(void)
 	elem3.data = "doing?";
 	begin = ft_create_elem("hello");
 	begin->next = &elem1;
-	aff_list(begin);
+	print_list(begin);
 	free(begin);
 	return (0);
 }
