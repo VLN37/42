@@ -3,8 +3,11 @@
 
 typedef	struct	s_list
 {
-	char	*data;
+	void	*data;
 	struct	s_list	*next;
 }	t_list;
+
+t_list *ft_create_elem(void *data);
+void	print_list(t_list *begin);
 
 #endif

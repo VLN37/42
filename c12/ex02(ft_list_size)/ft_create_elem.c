@@ -8,7 +8,7 @@ t_list *ft_create_elem(void *data)
 	char *str;
 
 	tmp = (t_list *)malloc(sizeof(t_list));
-	tmp->data = (char *) data;
+	tmp->data = data;
 	tmp->next = 0;
 	return (tmp);
 }

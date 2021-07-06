@@ -4,6 +4,7 @@
 
 t_list *ft_create_elem(void *data);
 void ft_list_push_front(t_list **begin_list, void *data);
+void ft_list_push_back(t_list **begin_list, void *data);
 
 
 //runs through the linked list, printing the relevant parameters
@@ -24,10 +25,10 @@ int	main(void)
 	t_list *elem1;
 	t_list **begin_list;
 
-	elem1 = ft_create_elem("Padawan");
+	elem1 = ft_create_elem("Padawan.");
 	begin_list = &elem1;
-	elem1->next = 0;
 	ft_list_push_front(begin_list, "small");
 	ft_list_push_front(begin_list, "Don't Panic");
+	ft_list_push_back(begin_list, "You can do it!");
 	print_list(begin_list);
 }
