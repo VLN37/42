@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 //runs through the linked list, printing the relevant parameters
-void	print_list(t_list **begin_list)
+void	ft_print_list(t_list **begin_list)
 {
 	t_list **tmpptr = begin_list;
 	printf("%s\n", ((char *)(*tmpptr)->data));

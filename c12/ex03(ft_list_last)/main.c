@@ -2,12 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-t_list *ft_create_elem(void *data);
-void ft_list_push_front(t_list **begin_list, void *data);
-void	print_list(t_list **begin_list);
-int ft_list_size(t_list *begin_list);
-t_list *ft_list_last(t_list *begin_list);
-
 int	main(void)
 {
 	int	i;

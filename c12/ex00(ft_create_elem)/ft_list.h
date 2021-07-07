@@ -8,6 +8,6 @@ typedef	struct	s_list
 }	t_list;
 
 t_list *ft_create_elem(void *data);
-void	print_list(t_list *begin);
+void	ft_print_list(t_list *begin);
 
 #endif

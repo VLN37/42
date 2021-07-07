@@ -19,7 +19,7 @@ int	main(void)
 	elem3.data = "doing?";
 	begin = ft_create_elem("hello");
 	begin->next = &elem1;
-	print_list(begin);
+	ft_print_list(begin);
 	free(begin);
 	return (0);
 }

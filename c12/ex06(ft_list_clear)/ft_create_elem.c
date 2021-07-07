@@ -1,6 +1,4 @@
 #include "ft_list.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 t_list *ft_create_elem(void *data)
 {
