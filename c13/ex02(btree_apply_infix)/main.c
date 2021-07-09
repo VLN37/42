@@ -28,10 +28,10 @@ int	main(void)
 	elem1->right = elem3;
 	elem2->left = elem4;
 	elem3->right = elem5;
-	btree_apply_suffix(elem1, &ft_print_btree);
+	btree_apply_infix(elem1, &ft_print_btree);
 	printf("\n");
-	btree_apply_suffix(elem1, &ft_divide_by_two);
-	btree_apply_suffix(elem1, &ft_print_btree);
+	btree_apply_infix(elem1, &ft_divide_by_two);
+	btree_apply_infix(elem1, &ft_print_btree);
 	printf("\n");
 	return (0);
 }
