@@ -1,36 +1,18 @@
-// #include<stdio.h>
+#include <stdio.h>
 
-// int	ft_strlen(char **str)
-// {
-// 	int	i;
-// 	int	j;
-// 	int	size;
+int	ft_strlen2(char *str);
+char *ft_strcpy(char *src, char *dest);
+char *ft_strjoin(int size, char **strs, char *sep);
+int	ft_strlen(char **str, int size);
 
-// 	i = 0;
-// 	j = 0;
-// 	size = 0;
-// 	while (str[i])
-// 	{
-// 		if (str[i][j])
-// 		{
-// 			j++;
-// 			size++;
-// 		}
-// 		if (!str[i][j])
-// 			i++;
-// 	}
-// 	return (size);
-// }
+int	main(void)
+{
+	char *str[] ={"thiiis", "issss", "FIREEEeee"};
+	char *sep = "STONKS";
+	char *dest = ft_strjoin(3, str, sep);
+	printf("%d\n", ft_strlen(str, 3));
+	printf("%s\n", ft_strjoin(3, str, sep));
 
-// char *ft_strjoin(int size, char **strs, char *sep);
+}
 
-// int	main(void)
-// {
-
-// 	char	string[2][5] =  {
-// 							"1234",
-// 							"5678",
-// 							};
-// 	printf("%d", ft_strlen(string));
-// 	return (0);
-// }
+//has to be 38 +2 (sep) +1 (\0s)

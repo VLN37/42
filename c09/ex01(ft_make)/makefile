@@ -1,11 +1,10 @@
 SOURCES	= ./srcs/ft_putchar.c ./srcs/ft_putstr.c ./srcs/ft_strcmp.c ./srcs/ft_strlen.c ./srcs/ft_swap.c
 # SRCS	= $(wildcard ./srcs/ft_*.c)
 
-#how to compile the lib with your files. Do i have to call the header?
-#Do i have to pass the path to the header?
-
+#to compile the library
 #gcc -Wall -Wextra - Werror -c ft* && ar rc libft.a *.o
 
+#to compile the file with the library and includes
 #gcc -Wall -Wextra -Werror main.c -L. -lft -I ./includes/libft.h
 
 OBJECTS	= ${SOURCES:.c=.o}
