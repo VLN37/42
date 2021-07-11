@@ -19,10 +19,9 @@ int	validation(char *str, int *ptrsign, int *ptri)
 	{
 		i++;
 	}
-	a
 	while (str[i] == '+' || str[i] == '-')
 	{
-		if (str[i] == '-') - - + - - - 
+		if (str[i] == '-')
 			*ptrsign *= -1;
 		i++;
 	}
@@ -52,8 +51,9 @@ int	ft_atoi(char *str)
 		if (str[i] < '0' || str[i] > '9')
 			return (result);
 		else
-			result = (result * 10) + (str[1] - '0') * sign;
+			result = (result * 10) + (str[i] - '0') * sign;
 		i++;
 	}
 	return (result);
 }
+

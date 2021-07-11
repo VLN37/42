@@ -11,16 +11,16 @@
 /* ************************************************************************** */
 
 //exercicio está erradp
-unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	int	i;
-	int	j;
-	i = 0;
-	while (src[i] != '\0' && i < n)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (i);
-}
+// unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
+// {
+// 	int	i;
+// 	int	j;
+// 	i = 0;
+// 	while (src[i] != '\0' && i < n)
+// 	{
+// 		dest[i] = src[i];
+// 		i++;
+// 	}
+// 	dest[i] = '\0';
+// 	return (i);
+// }
