@@ -10,7 +10,19 @@
 //base has the same character twice
 //base has + or -
 
+int	return_index(char *base, char c)
+{
+	int	i;
 
+	i = 0;
+	while (base[i])
+	{
+		if (base[i] == c)
+			return (i++);
+		i++;
+	}
+	return (-1);
+}
 
 int	ft_strlen(char *str)
 {

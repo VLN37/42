@@ -8,10 +8,10 @@ int	ft_strlen(char **str, int size);
 int	main(void)
 {
 	char *str[] ={"thiiis", "issss", "FIREEEeee"};
-	char *sep = "STONKS";
+	char *sep = "chakalaka";
 	char *dest = ft_strjoin(3, str, sep);
 	printf("%d\n", ft_strlen(str, 3));
-	printf("%s\n", ft_strjoin(3, str, sep));
+	printf("%s\n%p\n", ft_strjoin(3, str, sep));
 
 }
 

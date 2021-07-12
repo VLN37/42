@@ -8,7 +8,7 @@ int	ft_strlen(char **str, int size)
 
 	i = 0;
 	j = 0;
-	counter = 0;
+	counter = 1;
 	while (i < size)
 	{
 		while (str[i][j])
@@ -19,7 +19,6 @@ int	ft_strlen(char **str, int size)
 		j = 0;
 		i++;
 	}
-	counter++;
 	return (counter);
 }
 
@@ -41,9 +40,7 @@ char	*ft_strcpy(char *src, char *dest)
 	i = 0;
 	j = 0;
 	while (dest[i])
-	{
 		i++;
-	}
 	while (src[j])
 	{
 		dest[i] = src[j];
@@ -60,8 +57,9 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	int		destsize;
 
 	i = 0;
+	dest = NULL;
 	if (size == 0)
-		return (dest = 0);
+		return (dest);
 	destsize = (ft_strlen(strs, size) + ((ft_strlen2(sep) * (size - 1))));
 	dest = (char *)malloc(sizeof(char) * destsize);
 	while (i < destsize)
@@ -77,6 +75,5 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 		if (i < size)
 			dest = ft_strcpy(sep, dest);
 	}
-	dest[destsize] = '\0';
 	return (dest);
 }
