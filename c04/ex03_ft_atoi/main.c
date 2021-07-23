@@ -11,6 +11,7 @@ int	main(void)
 	char teste5[] = "   -----1337s1337";
 	char teste6[] = "--+-70703";
 	char teste7[] = "1231a1";
+	char teste8[] = "+-54";
 
 	printf("Inteiro mínimo: %d\n", ft_atoi(teste1));
 	printf("Inteiro máximo: %d\n", ft_atoi(teste2));
@@ -19,4 +20,5 @@ int	main(void)
 	printf("Teste de lixo: %d\n", ft_atoi(teste5));
 	printf("Teste de lixo: %d\n", ft_atoi(teste6));
 	printf("Teste de lixo: %d\n", ft_atoi(teste7));
+	printf("Teste: %d\n", ft_atoi(teste8));
 }

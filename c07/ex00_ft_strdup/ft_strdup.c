@@ -1,5 +1,4 @@
 #include<stdlib.h>
-#include<stdio.h>
 int	ft_strlen(char *str)
 {
 	int	i;
@@ -10,16 +9,19 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
+//dupes the string with memory from the heap and returns its new address
 char	*ft_strdup(char *src)
 {
-	int	i;
+	int		i;
+	char	*dest;
 
 	i = 0;
-	char *dest = malloc(sizeof(src) * ft_strlen(src));
-	while(src[i] != '\0')
+	dest = malloc(sizeof(src) * ft_strlen(src));
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
+	dest[i] = src[i];
 	return (dest);
 }
